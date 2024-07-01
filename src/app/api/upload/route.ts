@@ -2,6 +2,8 @@ import {PutObjectCommand, S3Client} from "@aws-sdk/client-s3";
 import {NextRequest} from "next/server";
 import uniqid from "uniqid"
 
+export const maxDuration = 20;
+
 export async function POST(req: NextRequest) {
   const data = await req.formData();
   const file = data.get('file') as File;

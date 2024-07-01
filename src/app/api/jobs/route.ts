@@ -2,6 +2,8 @@ import {JobModel} from "@/models/Job";
 import mongoose from "mongoose";
 import {NextRequest} from "next/server";
 
+export const maxDuration = 20;
+
 export async function DELETE(req: NextRequest) {
   const url = new URL(req.url);
   const id = url.searchParams.get('id');
