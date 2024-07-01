@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/jobs/route": "app/api/jobs/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/upload/route": "app/api/upload/route.js",
-  "/jobs/[orgId]/page": "app/jobs/[orgId]/page.js",
   "/jobs/edit/[jobId]/page": "app/jobs/edit/[jobId]/page.js",
-  "/new-listing/[orgId]/page": "app/new-listing/[orgId]/page.js",
+  "/api/jobs/route": "app/api/jobs/route.js",
+  "/jobs/[orgId]/page": "app/jobs/[orgId]/page.js",
   "/new-company/page": "app/new-company/page.js",
-  "/new-listing/page": "app/new-listing/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/new-listing/[orgId]/page": "app/new-listing/[orgId]/page.js",
+  "/api/upload/route": "app/api/upload/route.js",
   "/page": "app/page.js",
+  "/new-listing/page": "app/new-listing/page.js",
   "/show/[jobId]/page": "app/show/[jobId]/page.js",
   "/api/auth/callback/route": "app/api/auth/callback/route.js"
 }

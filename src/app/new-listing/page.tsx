@@ -7,12 +7,8 @@ import {WorkOS} from "@workos-inc/node";
 import Link from "next/link";
 
 export default async function NewListingPage() {
-
   const workos = new WorkOS(process.env.WORKOS_API_KEY);
-
   const {user} = await getUser();
-
-
 
   if (!user) {
     return (
@@ -27,12 +23,11 @@ export default async function NewListingPage() {
   });
 
   const activeOrganizationMemberships = organizationMemberships.data.filter(om => om.status === 'active');
-  const organizationsNames:{[key: string]: string} = {};
+  const organizationsNames: {[key: string]: string} = {};
   for (const activeMembership of activeOrganizationMemberships) {
     const organization = await workos.organizations.getOrganization(activeMembership.organizationId);
     organizationsNames[organization.id] = organization.name;
   }
-
 
   return (
     <div className="container">
@@ -43,6 +38,7 @@ export default async function NewListingPage() {
           <div className="border inline-block rounded-md">
             {Object.keys(organizationsNames).map(orgId => (
               <Link
+                key={orgId} // Adding key prop here
                 href={'/new-listing/' + orgId}
                 className={
                   "py-2 px-4 flex gap-2 items-center "

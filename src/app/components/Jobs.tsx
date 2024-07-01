@@ -1,6 +1,14 @@
 import JobRow from "@/app/components/JobRow";
 import type {Job} from "@/models/Job";
 
+
+
+interface JobsProps {
+  header: string;
+  jobs: Job[];
+}
+
+
 export default function Jobs({header,jobs}:{header:string,jobs:Job[]}) {
   return (
     <div className="bg-slate-200 py-6 rounded-3xl">
@@ -12,7 +20,7 @@ export default function Jobs({header,jobs}:{header:string,jobs:Job[]}) {
             <div>No jobs found</div>
           )}
           {jobs && jobs.map(job => (
-            <JobRow jobDoc={job} />
+           <JobRow key={job._id} jobDoc={job} /> /* Adding key prop here */
           ))}
         </div>
 
