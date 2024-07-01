@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/new-listing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/new-listing/page.js"
+    ],
+    "/new-company/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/new-company/page.js"
+    ],
+    "/new-listing/[orgId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/new-listing/[orgId]/page.css",
+      "static/chunks/app/new-listing/[orgId]/page.js"
+    ],
+    "/jobs/[orgId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/jobs/[orgId]/page.js"
+    ],
+    "/jobs/edit/[jobId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/jobs/edit/[jobId]/page.css",
+      "static/chunks/app/jobs/edit/[jobId]/page.js"
+    ]
+  }
+}

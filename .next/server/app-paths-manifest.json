@@ -1,0 +1,10 @@
+{
+  "/new-listing/page": "app/new-listing/page.js",
+  "/new-company/page": "app/new-company/page.js",
+  "/new-listing/[orgId]/page": "app/new-listing/[orgId]/page.js",
+  "/api/upload/route": "app/api/upload/route.js",
+  "/jobs/[orgId]/page": "app/jobs/[orgId]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/jobs/edit/[jobId]/page": "app/jobs/edit/[jobId]/page.js",
+  "/api/jobs/route": "app/api/jobs/route.js"
+}
